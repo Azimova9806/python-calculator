@@ -1,0 +1,21 @@
+people = [
+    {"name": "Ali", "age": 22, "country": "Uzbekistan"},
+    {"name": "Laylo", "age": 16, "country": "Uzbekistan"},
+    {"name": "Sardor", "age": 35, "country": "Kazakhstan"},
+    {"name": "Malika", "age": 12, "country": "Uzbekistan"},
+    {"name": "Ibrohim", "age": 18, "country": "Turkey"}
+]
+
+def show_info(person):
+    for key in person:
+        print(key, ":", person[key])
+
+for person in people:
+    show_info(person)
+    if person["age"] >= 18:
+        print("Category: Adult")
+    elif person["age"] >= 13:
+        print("Category: Teen")
+    else:
+        print("Category: Child")
+    print("----------")
